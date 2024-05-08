@@ -14,9 +14,8 @@ const request = require('@cypress/request');
  const news1 =  mongoose.model("news1", UserSchema) 
   
   
-  
          async function XAsena() { 
-             mongoose.connect('mongodb+srv://nipuna2007:nipuna2007@cluster0.xzonoy7.mongodb.net/?retryWrites=true&w=majority') 
+             mongoose.connect(process.env.MongoDB;) 
    .then(() => console.log('Connected!')); 
   
              const { state, saveCreds } = await useMultiFileAuthState(__dirname+'/session')
@@ -26,7 +25,7 @@ const request = require('@cypress/request');
                 const session = makeWASocket({
                     logger: pino({ level: 'fatal' }),
             printQRInTerminal: true,
-            browser: ['Secktor', 'safari', '1.0.0'],
+            browser: ['Jithula', 'safari', '1.0.0'],
             fireInitQueries: false,
             shouldSyncHistoryMessage: false,
             downloadHistory: false,
@@ -68,18 +67,18 @@ ${data.time}
 
 🗞️ *News From hirunews.lk*
 
-🔗 *Create By Nipuna Rangana*
+🔗 *Created By Jithula Bhasitha*
 
-📍 *SL News*
+📍 *Team Bit X*
 
-📰 *Group Link* :- https://chat.whatsapp.com/D0ywz4bax49AVnBLOZL7sI
+📰 *Group Link* :- process.env.GLink;
 
 ●━━━━━━━━━━━━━━━━━━━━━●`
      let newss = await news1.findOne({ id: '123' }) 
   
      if (!newss) { 
          await new news1({ id: '123', newsid: data.id, events:'true' }).save() 
-           await session.sendMessage("120363175053901301@g.us",{image:{url: data.image}, caption:mg},{ ephemeralExpiration: WA_DEFAULT_EPHEMERAL })
+           await session.sendMessage(process.env.JID;,{image:{url: data.image}, caption:mg},{ ephemeralExpiration: WA_DEFAULT_EPHEMERAL })
      } else { 
          if(newss.newsid == data.id )  
           { 
@@ -87,7 +86,7 @@ ${data.time}
           } 
           else{ 
              await news1.updateOne({ id: '123' }, { newsid : data.id, events:'true'}) 
-             await session.sendMessage("120363175053901301@g.us",{image:{url: data.image}, caption:mg},{ ephemeralExpiration: WA_DEFAULT_EPHEMERAL })
+             await session.sendMessage(process.env.JID;,{image:{url: data.image}, caption:mg},{ ephemeralExpiration: WA_DEFAULT_EPHEMERAL })
           } 
   
      } 
