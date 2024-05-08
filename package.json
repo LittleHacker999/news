@@ -1,14 +1,14 @@
 {
-    "name": "news-bot",
+    "name": "X-News-V1",
     "version": "1.0.0",
-    "description": "Multi device whatsapp bot by moxie",
+    "description": "Multi device whatsapp news bot by Jithula",
     "main": "index.js",
     "type": "commonjs", 
     "scripts": {
           "start": "node index.js  --attach --name moxie", 
           "stop": "node stop moxier" 
     },
-    "author": "nipuna",
+    "author": "Jithula",
     "license": "GPL-3.0",
     "dependencies": {
         "@whiskeysockets/baileys": "latest",
