@@ -1,9 +1,9 @@
   {
- "name": "Blue-Lion-QR ",  
-    "description": "whatsapp md bot build with nodejs",  
-    "repository": "https://github.com/nipuna15/Blue-Lion-QR",  
-    "logo": "https://raw.githubusercontent.com/nipuna15/nipuna15/main/IMG-20230613-WA0008.jpg",  
-    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],  
+ "name": "X-News-V1 ",  
+    "description": "whatsapp news bot build with nodejs",  
+    "repository": "https://github.com/JithulaB/X-News-V1",  
+    "logo": "https://avatars.githubusercontent.com/u/161597041?v=4",  
+    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device", "news bot"],  
     "buildpacks": [  
       {  
         "url": "heroku/nodejs"  
@@ -21,5 +21,22 @@
               "size": "eco"  
           }  
       }  
-
+"env": {
+    "MongoDB": {
+      "description": "MongoDB DataBase URL",
+      "value": ""
+      "required": true
+    },
+ {
+    "GLink": {
+      "description": "Ur Whatsapp Group Link",
+      "value": ""
+      "required": true
+    },
+   {
+    "JID": {
+      "description": "Ur Whatsapp Group Jid",
+      "value": ""
+      "required": true
+    },
 }
