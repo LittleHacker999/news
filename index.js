@@ -11,11 +11,11 @@ const request = require('@cypress/request');
  id : { type: String, required: true, unique: true }, 
  newsid : { type: String }, 
  }) 
- const news1 =  mongoose.model("news1", UserSchema) 
+ const news1 =  mongoose.model("Cluster0", UserSchema) 
   
   
          async function XAsena() { 
-             mongoose.connect(process.env.MongoDB;) 
+             mongoose.connect('mongodb+srv://Jithula:<password>@cluster0.i9f4p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0') 
    .then(() => console.log('Connected!')); 
   
              const { state, saveCreds } = await useMultiFileAuthState(__dirname+'/session')
